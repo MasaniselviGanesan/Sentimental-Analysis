@@ -1,24 +1,76 @@
+  # ✈️ Sentimental Analysis on Airline Tweets
 
-# Sentiment Analysis of Airline Tweets
+> ⚠️ **Note:** This project is currently in-progress and under active development. Some features and results are still being implemented and finalized.
 
-This project presents a sentiment classification model based on tweets directed at major U.S. airlines. The primary objective is to identify the sentiment expressed in each tweet as negative, neutral, or positive.
+---
 
-## Project Structure
+## 📌 Overview
 
-- `01_EDA_Cleaning.ipynb`: Contains the data loading, exploration, and preprocessing steps.
-- `02_LSTM_Model.ipynb`: Implements an LSTM-based deep learning model for sentiment classification.
-- `data/Tweets.csv`: Dataset used for training and evaluation.
-- `environment.yml`: Lists the required packages and environment specifications.
-- `README.md`: Project overview and setup guide.
+This project applies deep learning models (LSTM, Bi-LSTM) to classify airline-related tweets into **positive**, **neutral**, or **negative** sentiments. It’s being developed in **multiple phases**, with comparisons at each stage.
 
-## Dataset Overview
+---
 
-The dataset includes approximately 14,600 tweets labeled with sentiment categories and various metadata such as tweet source, user timezone, retweet count, and reason for negative sentiment. A number of fields contain missing values and were cleaned as part of preprocessing.
+## 🚧 Project Status
 
-## Model Summary
+| Component                |Status        |
+|------------------------  | ------------ |
+| ✅ Shared Preprocessing  | Complete    |
+| ✅ Base LSTM Model       | Implemented |
+| ✅ Bi-LSTM Model         | Implemented |
+| 🔄 GloVe Embedding       | Coming soon |
+| 🔄 BERT Integration      | Coming soon |
+| ✅ EDA & Visuals         | Drafted     |
+| ✅ GitHub Sync           | Complete    |
 
-The sentiment classification model uses a sequential LSTM network built with the Keras API. The model uses tokenized and padded tweet texts as input and outputs a categorical prediction for sentiment class.
+---
 
-## Acknowledgments
+## 📂 Project Structure
 
-Dataset Source: [Kaggle - Twitter US Airline Sentiment](https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment)
+<details>
+<summary>Click to view structure</summary>
+Sentimental-Analysis/
+├── data/
+├── notebooks/ # LSTM, Bi-LSTM, EDA
+├── scripts/ # Shared preprocessing, predict.py
+├── models/ # Saved models (optional)
+├── reports/ # Phase-wise PDFs or summaries
+├── requirements.txt
+└── README.md
+
+</details>
+
+---
+
+## 🛠 Technologies
+
+- Python, TensorFlow, Keras
+- Scikit-learn, Matplotlib, Seaborn
+- Jupyter Notebook
+- WordCloud
+
+---
+
+## ✅ Completed
+
+- ✅ Shared preprocessing pipeline
+- ✅ LSTM and Bi-LSTM models
+- ✅ Unified training/evaluation framework
+- ✅ Inference with saved tokenizer & encoder
+- ✅ Exploratory visuals and word clouds
+
+---
+
+## 🔄 Upcoming
+
+- 🔄 Integrate GloVe pre-trained embeddings
+- 🔄 Apply BERT for contextual classification
+- 🔄 Handle class imbalance with weighted loss or augmentation
+- 🧾 Compile final comparison and report
+
+ 
+
+## 📌 Note
+
+Please **don’t judge the performance or code quality yet** — this repository is part of an academic deep learning NLP project and still evolving across multiple enhancement phases.
+
+
