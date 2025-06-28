@@ -57,15 +57,27 @@ Sentimental-Analysis/
 - ✅ Unified training/evaluation framework
 - ✅ Inference with saved tokenizer & encoder
 - ✅ Exploratory visuals and word clouds
+- ✅Integrate GloVe pre-trained embeddings
 
 ---
 
 ## 🔄 Upcoming
 
-- 🔄 Integrate GloVe pre-trained embeddings
+
 - 🔄 Apply BERT for contextual classification
 - 🔄 Handle class imbalance with weighted loss or augmentation
 - 🧾 Compile final comparison and report
+
+# 📦 GloVe Embeddings
+
+Download `glove.6B.100d.txt` from:
+
+https://nlp.stanford.edu/data/glove.6B.zip
+
+Extract it and place the file inside this `/data/` folder.
+
+Note: Not included in repo due to GitHub file size limits.
+
 
  
 
